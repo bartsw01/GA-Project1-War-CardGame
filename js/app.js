@@ -2,11 +2,12 @@
 
 // *****************Action Steps***************
 //Monday - Day 1
-// Setup and link startup files
-// Bring in JS code for my other repo
-// Test card deck building JS code
-// Find graphic file for cards in GA Repo
-// Try to get deck to display on index.html
+// xxxSetup and link startup files
+// xxxBring in JS code for my other repo
+// xxxTest card deck building JS code
+// xxxFind graphic file for cards in GA Repo
+// ******Try to get deck to display on index.html******
+// ******OR*********Try to get just two cards to display
 
 //Tuesday - Day 2
 // Create Turn Button - link to jQuery command to run code for turn
