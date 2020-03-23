@@ -6,12 +6,14 @@
 // xxxBring in JS code for my other repo
 // xxxTest card deck building JS code
 // xxxFind graphic file for cards in GA Repo
-// figure out code to deal deck for each player
+// xxxxfigure out code to deal deck for each player
+// JS Logic - pick a card and compare point values
 
-// ******Try to get deck to display on index.html******
-// ******OR*********Try to get just two cards to display
+
 
 //Tuesday - Day 2
+// ******Try to get deck to display on index.html******
+// ******OR*********Try to get just two cards to display
 // Create Turn Button - link to jQuery command to run code for turn
 // Set point values for cards
 // JS Logic - pick a card and compare point values
@@ -102,23 +104,30 @@
         }
         return deck;
     }
+
     console.log(createDeck())
+    const globalDeck = createDeck();
 
 
     // Create dealPlayerDeck function
     let player1Deck = [];
     let player2Deck = [];
-    function dealCardsToPlayers() {
-        let card1 = Math.floor(Math.random()*deck.length)
-        player1Deck= deck[card1];
-            deck.splice(card1,1);
-        let card2 = Math.floor(Math.random()*deck.length)
-        player2Deck = deck[card2];
-            deck.splice(card2, 1);	 
-        return deck;
-    
+
+    function dealPlayerDeck() {
+
+        for (i=0; i < 26; i++) {
+            let card1 = Math.floor(Math.random()*globalDeck.length)
+            player1Deck.push(globalDeck[card1]);
+            globalDeck.splice(card1,1);
+            let card2 = Math.floor(Math.random()*globalDeck.length)
+            player2Deck.push(globalDeck[card2]);
+            globalDeck.splice(card2, 1);
+            console.log(globalDeck.length);	
+        }     
     }
-    dealCardsToPlayers()
+
+    dealPlayerDeck();
     console.log(player1Deck);
     console.log(player2Deck);
+
     
