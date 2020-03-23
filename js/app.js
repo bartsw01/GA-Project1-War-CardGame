@@ -1,5 +1,13 @@
 // Pseudocode - War Card Game
 
+// *****************Action Steps***************
+//Monday - Day 1
+// Setup and link startup files
+// Bring in JS code for my other repo
+// Test card deck building JS code
+//
+
+
 // ****************HTML NEEDED*****************
 // Need to setup board link to background image
 // Create placeholder divs for 2 cards .....then they will flip to show face
