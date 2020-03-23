@@ -5,7 +5,17 @@
 // Setup and link startup files
 // Bring in JS code for my other repo
 // Test card deck building JS code
-//
+// Find graphic file for cards in GA Repo
+// Try to get deck to display on index.html
+
+//Tuesday - Day 2
+// Create Turn Button - link to jQuery command to run code for turn
+// Set point values for cards
+// JS Logic - pick a card and compare point values
+
+// Determine a winner
+// Add point to score - player or computer
+// remove 1 card from each deck
 
 
 // ****************HTML NEEDED*****************
