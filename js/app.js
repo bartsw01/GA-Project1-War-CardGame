@@ -93,7 +93,7 @@
     // console.log(Deck.createDeck)
 
     const suits = ["Hearts", "Spades", "Clubs", "Diamonds"];
-    const values = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King"];
+    const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"];
     // }
       function createDeck()
     {
@@ -131,8 +131,10 @@
     }
 
     dealPlayerDeck();
-    // console.log('player1Deck', player1Deck);
-    // console.log('player2Deck', player2Deck);
+    console.log('player1Deck', player1Deck);
+    console.log('player2Deck', player2Deck);
+
+    console.log()
     // console.log('player1Deck[0]', player1Deck[0]);
     // console.log('player2Deck[0]', player2Deck[0]);
     // console.log('player1Deck.pop', player1Deck.pop());
@@ -147,17 +149,53 @@
     //     }
     // showCards();
 
+    let player1TestValue = values.indexOf("Ace") + 2;
+    let player2TestValue = values.indexOf("Queen") + 2;
+    console.log(player1TestValue);
+
     function compareCards () {
         let playerCard1 = player1Deck[0];
         player1Deck.splice(playerCard1, 1);
-        console.log(playerCard1);
-        console.log(player1Deck.length);
-
-        
         let playerCard2 = player2Deck[0];
         player2Deck.splice(playerCard2, 1);
+
+        console.log(playerCard1);
+        console.log(player1Deck.length);
         console.log(playerCard2);
         console.log(player2Deck.length);
+
+        
+
+        let player1CardValue = playerCard1.Value;
+        let player2CardValue = playerCard2.Value;
+
+        console.log(player1CardValue);
+        console.log(player2CardValue);
+        //const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"];
+
+        let player1CompareValue = values.indexOf(playerCard1.Value) + 2;
+        let player2CompareValue = values.indexOf(playerCard2.Value) + 2;
+            console.log('player1compareval', player1CompareValue);
+            console.log('player2compareval', player2CompareValue);
+
+        // function compareCardValue () {
+        //     let player1CompareValue = values.findIndex(player1CardValue) + 2;
+        //     let player2CompareValue = values.findIndex(player2CardValue) + 2;
+        //     console.log(player1CompareValue);
+        //     console.log(player2CompareValue);
+        // }
+        // compareCardValue();
+
+        // if (player1CompareValue > player2CompareValue) {
+        //         console.log("Player 1 Wins!")
+        //     } else if (player2CompareValue > player1CompareValue){
+        //         console.log("Player 2 Wins!")
+        //     } else {
+        //         console.log("We have a tie!")
+        //     }
+        
+        // compare values and push cards to player discard decks 
+        // player score === playerDiscardDeck.length
         
     }
     compareCards();
