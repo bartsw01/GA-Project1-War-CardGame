@@ -7,16 +7,20 @@
 // xxxTest card deck building JS code
 // xxxFind graphic file for cards in GA Repo
 // xxxxfigure out code to deal deck for each player
-// JS Logic - pick a card and compare point values
+
 
 
 
 //Tuesday - Day 2
+// JS Logic - pick a card and compare point values
+// Set point values for cards
+
+
 // ******Try to get deck to display on index.html******
 // ******OR*********Try to get just two cards to display
 // Create Turn Button - link to jQuery command to run code for turn
 // Set point values for cards
-// JS Logic - pick a card and compare point values
+
 
 // Determine a winner
 // Add point to score - player or computer
@@ -122,12 +126,45 @@
             let card2 = Math.floor(Math.random()*globalDeck.length)
             player2Deck.push(globalDeck[card2]);
             globalDeck.splice(card2, 1);
-            console.log(globalDeck.length);	
+            //console.log(globalDeck.length);	
         }     
     }
 
     dealPlayerDeck();
-    console.log(player1Deck);
-    console.log(player2Deck);
+    // console.log('player1Deck', player1Deck);
+    // console.log('player2Deck', player2Deck);
+    // console.log('player1Deck[0]', player1Deck[0]);
+    // console.log('player2Deck[0]', player2Deck[0]);
+    // console.log('player1Deck.pop', player1Deck.pop());
+    // console.log('player2Deck.pop', player2Deck.pop());
+    // console.log('player1Deck.length' + player1Deck.length);
+
+    // function showCards() {
+
+    //     let player1Card = player1Deck.pop();
+    //     let player2Card = player2Deck.pop();
+        
+    //     }
+    // showCards();
+
+    function compareCards () {
+        let playerCard1 = player1Deck[0];
+        player1Deck.splice(playerCard1, 1);
+        console.log(playerCard1);
+        console.log(player1Deck.length);
+
+        
+        let playerCard2 = player2Deck[0];
+        player2Deck.splice(playerCard2, 1);
+        console.log(playerCard2);
+        console.log(player2Deck.length);
+        
+    }
+    compareCards();
+
+    
+    
+
+
 
     
