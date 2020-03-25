@@ -134,24 +134,9 @@
     console.log('player1Deck', player1Deck);
     console.log('player2Deck', player2Deck);
 
-    console.log()
-    // console.log('player1Deck[0]', player1Deck[0]);
-    // console.log('player2Deck[0]', player2Deck[0]);
-    // console.log('player1Deck.pop', player1Deck.pop());
-    // console.log('player2Deck.pop', player2Deck.pop());
-    // console.log('player1Deck.length' + player1Deck.length);
+ 
 
-    // function showCards() {
-
-    //     let player1Card = player1Deck.pop();
-    //     let player2Card = player2Deck.pop();
-        
-    //     }
-    // showCards();
-
-    let player1TestValue = values.indexOf("Ace") + 2;
-    let player2TestValue = values.indexOf("Queen") + 2;
-    console.log(player1TestValue);
+    
 
     function compareCards () {
         let playerCard1 = player1Deck[0];
