@@ -23,7 +23,7 @@
 
 
 // Determine a winner
-// Add point to score - player or computer
+// Add poinuujkjl;p[pt to score - player or computer
 // remove 1 card from each deck
 
 
@@ -171,28 +171,34 @@
 
         console.log(player1CardValue);
         console.log(player2CardValue);
-        //const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"];
+        
 
         let player1CompareValue = values.indexOf(playerCard1.Value) + 2;
         let player2CompareValue = values.indexOf(playerCard2.Value) + 2;
-            console.log('player1compareval', player1CompareValue);
-            console.log('player2compareval', player2CompareValue);
+           
 
-        // function compareCardValue () {
-        //     let player1CompareValue = values.findIndex(player1CardValue) + 2;
-        //     let player2CompareValue = values.findIndex(player2CardValue) + 2;
-        //     console.log(player1CompareValue);
-        //     console.log(player2CompareValue);
-        // }
-        // compareCardValue();
+        let playerScore1 = [];
+        let playerScore2 = [];
 
-        // if (player1CompareValue > player2CompareValue) {
-        //         console.log("Player 1 Wins!")
-        //     } else if (player2CompareValue > player1CompareValue){
-        //         console.log("Player 2 Wins!")
-        //     } else {
-        //         console.log("We have a tie!")
-        //     }
+        if (player1CompareValue > player2CompareValue) {
+            playerScore1.push(playerCard1);
+            playerScore1.push(playerCard2);
+                console.log("Player 1 Wins!");
+                console.log('Player 1 Score: ', playerScore1.length);
+                console.log('Player 2 Score: ', playerScore2.length);
+            } else if (player2CompareValue > player1CompareValue){
+                playerScore2.push(playerCard1);
+                playerScore2.push(playerCard2);
+                console.log("Player 2 Wins!");
+                console.log('Player 1 Score: ', playerScore1.length);
+                console.log('Player 2 Score: ', playerScore2.length);
+            } else {
+                playerScore1.push(playerCard1);
+                playerScore2.push(playerCard2);
+                console.log("We have a tie!")
+                console.log('Player 1 Score: ', playerScore1.length);
+                console.log('Player 2 Score: ', playerScore2.length);
+            }
         
         // compare values and push cards to player discard decks 
         // player score === playerDiscardDeck.length
