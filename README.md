@@ -6,7 +6,7 @@
 # _Screenshot(s):
 Reference-style: 
 ![alt text][logo]
-[logo]:(https://github.com/bartsw01/GA-Project1-War-CardGame/blob/master/images/War-Screen-Shot1.png)
+[logo]: https://github.com/bartsw01/GA-Project1-War-CardGame/blob/master/images/War-Screen-Shot1.png
 
 #### _A card game, March 27, 2020_
 
