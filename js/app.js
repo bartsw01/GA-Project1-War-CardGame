@@ -228,9 +228,16 @@
                 
             }
 
-        if (player1Deck.length && player2Deck.length === 0) {
+        if (player1Deck.length === 0 && player2Deck.length === 0) {
             alert("Game Over!");
+            createDeck();
 
+            player1Deck = [];
+            player2Deck = [];
+            playerScore1 = [];
+            playerScore2 = [];
+            render();
+            dealPlayerDeck()
         }
         
         
