@@ -229,7 +229,15 @@
             }
 
         if (player1Deck.length === 0 && player2Deck.length === 0) {
-            alert("Game Over!");
+            document.getElementById('game-over').textContent = "Game Over";
+            // alert("Game Over!");
+            if(playerScore1.length > playerScore2.length){
+                document.getElementById('winner').textContent = "Player 1 Wins!";
+            } else if (playerScore1.length < playerScore2.length) {
+                document.getElementById('winner').textContent = "Player 2 Wins!";
+            }else {
+                document.getElementById('winner').textContent = "Game Ends in a Tie!";
+            }
             createDeck();
 
             player1Deck = [];
@@ -268,18 +276,5 @@
     document.getElementById("next-turn").addEventListener("click", compareCards);
 
 
-// // reset function // // ADD EVENT LISTENER TO CLICK BUTTON
-// $('#resetSlot').click(function () {
-//     reset()
-//   });
-//   // LOGGING THE REMAINING
-//   console.log(game.fundsAvailable + 1);
-// }
-// // RESET THE GAME () =>
-// reset = () => {
-//   game = EmptyGame();
-//   $('#attempts').html(game.gameState);
-//   $('#results').html('');
-//   $('#playSlot').attr('disabled', false);
-// }
+
     
