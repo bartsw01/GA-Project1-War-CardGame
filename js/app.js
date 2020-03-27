@@ -203,7 +203,7 @@
             playerScore1.push(playerCard1);
             playerScore1.push(playerCard2);
                 console.log("Player 1 Wins!");
-                document.getElementById('winner').textContent = "Player 1 Wins!" ;
+                document.getElementById("winner").textContent = "Player 1 Wins!" ;
                 // alert("Player 1 Wins!")
                 console.log('Player 1 Score: ', playerScore1.length);
                 console.log('Player 2 Score: ', playerScore2.length);

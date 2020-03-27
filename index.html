@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GA-Project1-War-CardGame</title>
-    <link rel="stylesheet" src="css/main.css"></link>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    <link rel="stylesheet" src="css/main.css"></link>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
    crossorigin="anonymous"></script>
     <script defer src="js/app.js"></script>
 
 </head>
 <body>
-    <h1>GA-Project1-War-CardGame</h1>
-    <div>
-        <img src="images/war-background.png">
-    </div>
+    <header class="jumbotron text-center">GA-Project1-War-CardGame</header>
+    <main>
+        <div class="jumbotron text-center" id="winner"></div>
+        <div><label>Player 1 Score: </label><span id="player1-score"></span></div>
+        <div><label>Player 2 Score: </label><span id="player2-score"></span></div>
+        <img id="player1" />
+        
+        <section id="middle">
+            <button id="new-game">New Game</button>
+            <button id="new-hand">Deal Hands</button>
+            <button id="next-turn">Next Turn</button>
+        </section>
+        <img id="player2" />
+      </main>
+    
 </body>
 </html>
 
