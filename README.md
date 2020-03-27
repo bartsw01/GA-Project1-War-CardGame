@@ -1,7 +1,12 @@
 # GA-Project1-War-CardGame
 # _War Card Game_
 # _Getting Started:_
+[Click on Link to Play Game](https://bartsw01.github.io/GA-Project1-War-CardGame/)
+
 # _Screenshot(s):
+Reference-style: 
+![alt text][logo]
+[logo]:(https://github.com/bartsw01/GA-Project1-War-CardGame/blob/master/images/War-Screen-Shot1.png)
 
 #### _A card game, March 27, 2020_
 
